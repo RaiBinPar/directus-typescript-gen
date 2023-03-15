@@ -77,7 +77,7 @@ const main = async (): Promise<void> => {
         return null;
       }
       const [, collectionName] = match;
-      const propertyKey = snakeCase(collectionName);
+      const propertyKey = collectionName;
       return `  ${propertyKey}: components["schemas"]["Items${collectionName}"];`;
     })
     .filter((line): line is string => typeof line === `string`)
