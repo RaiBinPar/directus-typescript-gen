@@ -3,7 +3,6 @@
 import { promises } from "fs";
 import { resolve } from "path";
 
-import { snakeCase } from "change-case";
 import fetch from "node-fetch";
 import { z } from "zod";
 import yargs from "yargs";
